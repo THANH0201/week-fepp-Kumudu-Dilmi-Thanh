@@ -1,6 +1,6 @@
-// src/ContactUs.jsx
+
 import { useState } from 'react';
-function ContactUs() {
+function Registration() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
@@ -9,8 +9,8 @@ function ContactUs() {
     const onSubmit = e => {
         e.preventDefault();
 
-        // Tạo đối tượng thông tin liên hệ
-        const contactUsInformation = {
+        // create an object to hold the form data
+        const registrationInformation = {
             name,
             email,
             phone,
@@ -19,9 +19,9 @@ function ContactUs() {
             submittedOn: new Date()
         };
 
-        console.log(contactUsInformation); // In ra console
+        console.log(registrationInformation);
 
-        // Reset lại form
+        // reset form fields
         setName('');
         setEmail('');
         setPhone('');
@@ -30,7 +30,7 @@ function ContactUs() {
     };
     return (
         <div>
-            <h2>Contact Us</h2>
+            <h2>Registration</h2>
             <form onSubmit={onSubmit}>
                 <div>
                     <label htmlFor='name'>Name:</label>
@@ -71,4 +71,4 @@ function ContactUs() {
     );
 }
 
-export default ContactUs;
+export default Registration;
