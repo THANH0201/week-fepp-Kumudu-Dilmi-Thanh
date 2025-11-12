@@ -16,12 +16,17 @@ function Tours() {
     <section className="section" id="tours">
       <Title title="featured" subTitle="tours" />
 
+      
       <div className="section-center featured-center">
         {toursData.map((tour) => (
           <Tour key={tour.id} {...tour} removeTour={removeTour} />
+          
+
         ))}
-      </div>
-    </section>
+
+      
+    </div>
+    </section >
   );
 };
 
