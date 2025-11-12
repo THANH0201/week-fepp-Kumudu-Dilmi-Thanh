@@ -69,6 +69,7 @@ export const tours = [
     cost: 2100,
     difficulty: "hard",
     rating: 4.8,
+    
   },
   {
     id: 2,
